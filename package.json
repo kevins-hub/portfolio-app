@@ -1,0 +1,17 @@
+{
+  "name": "portfoliojs",
+  "version": "1.0.0",
+  "description": "nodejs version of digi-folio",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kevin Liu",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.0.0",
+    "nodemailer": "^6.4.10"
+  }
+}
