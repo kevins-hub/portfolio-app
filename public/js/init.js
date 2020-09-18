@@ -157,7 +157,22 @@ jQuery(document).ready(function() {
   $("a[href*=#next-slide]").on("click",function(event) {
       event.preventDefault(); 
       jQuery('#ks.backstretched').data('backstretch').prev();
+  });
+
+// F35
+$("#finstagram.backstretched").backstretch(["/public/img/slides/finstagram-slide-1.jpg", ], {
+  duration: 6000,
+  fade: 1200
 });
+$("a[href*=#prev-slide]").on("click",function(event) {
+  event.preventDefault(); 
+  jQuery('#finstagram.backstretched').data('backstretch').prev();
+});
+$("a[href*=#next-slide]").on("click",function(event) {
+    event.preventDefault(); 
+    jQuery('#finstagram.backstretched').data('backstretch').prev();
+});
+
 
 // F35
 $("#f35.backstretched").backstretch(["/public/img/slides/f35-slide-1.jpg", ], {

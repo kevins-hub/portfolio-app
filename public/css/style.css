@@ -1644,6 +1644,12 @@ a.logo-light {
     text-transform: uppercase;
 }
 
+#finstagram.backstretched{
+    max-height: 900px;
+    width: auto;
+}
+
+
 .backstrech-controls a {
     background: rgba(0,0,0,0.4);
     width: 70px;

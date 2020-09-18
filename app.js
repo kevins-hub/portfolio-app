@@ -63,6 +63,10 @@ app.get('/portfolio', (req,res) => {
 app.get('/photos', (req, res) => {
     res.render('photos')
 });
+
+app.get('/finstagram', (req, res) => {
+    res.render('finstagram')
+});
 /*
 app.get('/lessons', (req,res) => {
     res.render('lessons');
