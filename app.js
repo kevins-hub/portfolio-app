@@ -67,6 +67,10 @@ app.get('/photos', (req, res) => {
 app.get('/finstagram', (req, res) => {
     res.render('finstagram')
 });
+
+app.get('/thegoodlive', (req, res) => {
+    res.render('thegoodlive')
+});
 /*
 app.get('/lessons', (req,res) => {
     res.render('lessons');

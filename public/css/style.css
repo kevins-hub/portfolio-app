@@ -910,7 +910,7 @@ section, header#home {
 }
 
 .section-title {
-    margin-bottom: 0;
+    margin-bottom: 20px;
     margin-top: 0;
     font-size: 42px;
     letter-spacing: 7px;
@@ -1699,9 +1699,14 @@ a.logo-light {
 .skill-icon{
     height:30px;
     width: 30px;
+    margin-bottom: 20px;
 }
 
 
 ul{
     padding-inline-start: 0px;
+}
+
+.work-tiles{
+    height: 241px;
 }

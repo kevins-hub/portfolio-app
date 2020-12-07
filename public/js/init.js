@@ -143,6 +143,19 @@ jQuery(document).ready(function() {
   });
 */
 
+// The Good Live
+$("#tgl.backstretched").backstretch(["/public/img/slides/tgl-slide-1.png", ], {
+  duration: 6000,
+  fade: 1200
+});
+$("a[href*=#prev-slide]").on("click",function(event) {
+  event.preventDefault(); 
+  jQuery('#tgl.backstretched').data('backstretch').prev();
+});
+$("a[href*=#next-slide]").on("click",function(event) {
+    event.preventDefault(); 
+    jQuery('#tgl.backstretched').data('backstretch').prev();
+});
 
 
 // Keep skating
@@ -159,7 +172,7 @@ jQuery(document).ready(function() {
       jQuery('#ks.backstretched').data('backstretch').prev();
   });
 
-// F35
+// Finstagram
 $("#finstagram.backstretched").backstretch(["/public/img/slides/finstagram-slide-1.jpg", ], {
   duration: 6000,
   fade: 1200
