@@ -386,7 +386,7 @@ span.x4:before,i.x4:before {
     color: #222;
     padding: 9px 12px 7px;
     line-height: 1;
-    font-size: 12px;
+    font-size: 9px;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 400;
@@ -925,6 +925,9 @@ section, header#home {
     opacity: 1;
 }
 
+#home-headshot{
+    margin-bottom: 40px;
+}
 
 /*-----------------------------------------------------------------------------------*/
 /* TEAM
