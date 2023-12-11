@@ -92,7 +92,7 @@ span.x4:before,i.x4:before {
 }
 
 .fullheight {
-    
+
     height: calc(100vh - 200px);
     /*
     height: calc(100vh);
@@ -350,7 +350,7 @@ span.x4:before,i.x4:before {
 
 .hover-effect .hover-overlay {
     background-color: rgba(0,0,0,0.0);
-    opacity: 1;    
+    opacity: 1;
     color: #fff;
 }
 
@@ -415,7 +415,7 @@ span.x4:before,i.x4:before {
 
 #home.fullheight.max-600, #home .fullheight.max-600 {
     max-height: 600px;
-} 
+}
 
 .single-page-hero {
     min-height: 460px;
@@ -489,7 +489,7 @@ span.x4:before,i.x4:before {
     position: relative;
     width: 100%;
     z-index: 10;
-    background-color: transparent;    
+    background-color: transparent;
     left: 0;
     padding: 20px 30px 0;
 }
@@ -770,7 +770,7 @@ img.logo {
 
 .btn-primary:hover {
     background-color: #222;
-    border-color: #222;   
+    border-color: #222;
 }
 
 .btn-primary.btn-outlined {
@@ -826,7 +826,7 @@ img.logo {
     width: 20px;
 }
 
-.btn-icon:hover i {    
+.btn-icon:hover i {
     opacity: 1;
     left: 0px;
 }
@@ -942,7 +942,7 @@ section, header#home {
     height: 100%;
 }
 
-.team-item .team-image {  
+.team-item .team-image {
     height: 100%;
     display: block;
     position: relative;
@@ -1103,7 +1103,7 @@ section, header#home {
 
 footer {
     padding-top: 80px;
-    padding-bottom: 80px;    
+    padding-bottom: 80px;
 }
 
 .sub-footer {
@@ -1645,6 +1645,98 @@ a.logo-light {
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+
+/* Styling the area of the slides */
+.slideshow {
+  overflow: hidden;
+  height: 600px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* Style each of the sides
+with a fixed width and height */
+.slide {
+  float: left;
+  height: 600px;
+  width: 1000px;
+  display: flex;
+}
+
+/*
+.slide img {
+  height: 100%;
+  width: auto;
+}
+*/
+
+/* Add animation to the slides */
+.slide-wrapper {
+
+/* Calculate the total width on the
+  basis of number of slides */
+  width: calc(1000px * 5);
+
+/* Specify the animation with the
+  duration and speed */
+  animation: slide 20s ease infinite;
+}
+
+/* Set the background color
+of each of the slides */
+/*
+.slide:nth-child(1) {
+  background: green;
+}
+
+.slide:nth-child(2) {
+  background: pink;
+}
+
+.slide:nth-child(3) {
+  background: red;
+}
+
+.slide:nth-child(4) {
+  background: yellow;
+}
+*/
+
+/* Define the animation
+for the slideshow */
+@keyframes slide {
+
+/* Calculate the margin-left for
+  each of the slides */
+  20% {
+    margin-left: 0px;
+  }
+
+  40% {
+    margin-left: calc(-1000px * 1);
+  }
+
+  60% {
+    margin-left: calc(-1000px * 2);
+  }
+
+  80% {
+    margin-left: calc(-1000px * 3);
+  }
+
+  100% {
+    margin-left: calc(-1000px * 4);
+  }
+}
+
+.skill-flex {
+  display: flex;
+}
+
+.skill-flex div {
+  margin-left: 12px;
 }
 
 #finstagram.backstretched{

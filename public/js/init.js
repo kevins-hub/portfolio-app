@@ -9,7 +9,7 @@ jQuery(document).ready(function() {
       navigationText: [
       "<i class='pe-7s-angle-left'></i>",
       "<i class='pe-7s-angle-right'></i>"
-      ], 
+      ],
       autoPlay: 8000,
       loop: true
     });
@@ -27,7 +27,7 @@ jQuery(document).ready(function() {
       autoPlay: 8000,
       loop: true
     });
-    
+
   /* RESPONSIVE VIDEOS */
   jQuery(".frame-wrapper").fitVids();
 
@@ -135,7 +135,7 @@ jQuery(document).ready(function() {
   $("#home.fashion-slider").backstretch(["/public/images/fashion/fashion-slide-1.jpg", "/public/images/fashion/fashion-slide-2.jpg"], {
     duration: 6000,
     fade: 1200
-  });  
+  });
 /*
   $("#home.backstretched").backstretch(["/public/images/home/slide-1.jpeg", "/public/images/home/slide-2.jpeg", "/public/images/home/slide-3.jpeg", ], {
     duration: 6000,
@@ -143,17 +143,31 @@ jQuery(document).ready(function() {
   });
 */
 
+// OnSIP
+$("#onsip.backstretched").backstretch(["/public/img/slides/onsip-slide-1.png", "/public/img/slides/onsip-slide-2.png", "/public/img/slides/onsip-slide-3.png", "/public/img/slides/onsip-slide-4.png"], {
+  duration: 6000,
+  fade: 1200
+});
+$("a[href*=#prev-slide]").on("click",function(event) {
+  event.preventDefault();
+  jQuery('#onsip.backstretched').data('backstretch').prev();
+});
+$("a[href*=#next-slide]").on("click",function(event) {
+    event.preventDefault();
+    jQuery('#onsip.backstretched').data('backstretch').prev();
+});
+
 // The Good Live
 $("#tgl.backstretched").backstretch(["/public/img/slides/tgl-slide-1.png", ], {
   duration: 6000,
   fade: 1200
 });
 $("a[href*=#prev-slide]").on("click",function(event) {
-  event.preventDefault(); 
+  event.preventDefault();
   jQuery('#tgl.backstretched').data('backstretch').prev();
 });
 $("a[href*=#next-slide]").on("click",function(event) {
-    event.preventDefault(); 
+    event.preventDefault();
     jQuery('#tgl.backstretched').data('backstretch').prev();
 });
 
@@ -164,11 +178,11 @@ $("a[href*=#next-slide]").on("click",function(event) {
     fade: 1200
   });
   $("a[href*=#prev-slide]").on("click",function(event) {
-    event.preventDefault(); 
+    event.preventDefault();
     jQuery('#ks.backstretched').data('backstretch').prev();
   });
   $("a[href*=#next-slide]").on("click",function(event) {
-      event.preventDefault(); 
+      event.preventDefault();
       jQuery('#ks.backstretched').data('backstretch').prev();
   });
 
@@ -178,11 +192,11 @@ $("#finstagram.backstretched").backstretch(["/public/img/slides/finstagram-slide
   fade: 1200
 });
 $("a[href*=#prev-slide]").on("click",function(event) {
-  event.preventDefault(); 
+  event.preventDefault();
   jQuery('#finstagram.backstretched').data('backstretch').prev();
 });
 $("a[href*=#next-slide]").on("click",function(event) {
-    event.preventDefault(); 
+    event.preventDefault();
     jQuery('#finstagram.backstretched').data('backstretch').prev();
 });
 
@@ -193,11 +207,11 @@ $("#f35.backstretched").backstretch(["/public/img/slides/f35-slide-1.jpg", ], {
   fade: 1200
 });
 $("a[href*=#prev-slide]").on("click",function(event) {
-  event.preventDefault(); 
+  event.preventDefault();
   jQuery('#f35.backstretched').data('backstretch').prev();
 });
 $("a[href*=#next-slide]").on("click",function(event) {
-    event.preventDefault(); 
+    event.preventDefault();
     jQuery('#f35.backstretched').data('backstretch').prev();
 });
 
@@ -207,11 +221,11 @@ $("#jira.backstretched").backstretch(["/public/img/slides/jira-slide-1.jpg", ], 
   fade: 1200
 });
 $("a[href*=#prev-slide]").on("click",function(event) {
-  event.preventDefault(); 
+  event.preventDefault();
   jQuery('#jira.backstretched').data('backstretch').prev();
 });
 $("a[href*=#next-slide]").on("click",function(event) {
-    event.preventDefault(); 
+    event.preventDefault();
     jQuery('#jira.backstretched').data('backstretch').prev();
 });
 
@@ -221,11 +235,11 @@ $("#manu.backstretched").backstretch(["/public/img/slides/manu-slide-1.png", ], 
   fade: 1200
 });
 $("a[href*=#prev-slide]").on("click",function(event) {
-  event.preventDefault(); 
+  event.preventDefault();
   jQuery('#manu.backstretched').data('backstretch').prev();
 });
 $("a[href*=#next-slide]").on("click",function(event) {
-    event.preventDefault(); 
+    event.preventDefault();
     jQuery('#manu.backstretched').data('backstretch').prev();
 });
 
@@ -235,11 +249,11 @@ $("#budget.backstretched").backstretch(["/public/img/slides/budget-slide-1.jpg",
   fade: 1200
 });
 $("a[href*=#prev-slide]").on("click",function(event) {
-  event.preventDefault(); 
+  event.preventDefault();
   jQuery('#budget.backstretched').data('backstretch').prev();
 });
 $("a[href*=#next-slide]").on("click",function(event) {
-    event.preventDefault(); 
+    event.preventDefault();
     jQuery('#budget.backstretched').data('backstretch').prev();
 });
 
@@ -249,11 +263,11 @@ $("#portfolio.backstretched").backstretch(["/public/img/slides/pf-slide-1.png","
   fade: 1200
 });
 $("a[href*=#prev-slide]").on("click",function(event) {
-  event.preventDefault(); 
+  event.preventDefault();
   jQuery('#portfolio.backstretched').data('backstretch').prev();
 });
 $("a[href*=#next-slide]").on("click",function(event) {
-    event.preventDefault(); 
+    event.preventDefault();
     jQuery('#portfolio.backstretched').data('backstretch').prev();
 });
 
@@ -265,11 +279,11 @@ $("a[href*=#next-slide]").on("click",function(event) {
     fade: 1200
   });
   $("a[href*=#prev-slide]").on("click",function(event) {
-      event.preventDefault(); 
+      event.preventDefault();
       jQuery('#home.backstretched').data('backstretch').prev();
     });
   $("a[href*=#next-slide]").on("click",function(event) {
-      event.preventDefault(); 
+      event.preventDefault();
       jQuery('#home.backstretched').data('backstretch').prev();
   });
   */
@@ -399,7 +413,7 @@ $(window).load(function() {
   }
   $('.styled-accordion').on('hidden.bs.collapse', toggleIcon);
   $('.styled-accordion').on('shown.bs.collapse', toggleIcon);
-  
+
   $('a#open-map').click(function(e) {
     e.preventDefault();
     $('#map-holder').slideToggle();
